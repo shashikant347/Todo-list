@@ -3,7 +3,7 @@ let add = document.querySelector('.add');
 let ul = document.querySelector('.list');
 let reset = document.querySelector('.reset');
 
-// Add task
+
 add.addEventListener('click', () => {
     let values = input.value.trim();
     if (values === '') {
@@ -14,7 +14,7 @@ add.addEventListener('click', () => {
         li.innerText = values;
 
         let span = document.createElement('span');
-        span.innerHTML = '\u00d7'; // × symbol
+        span.innerHTML = '\u00d7'; 
         li.appendChild(span);
 
         ul.appendChild(li);
@@ -22,15 +22,15 @@ add.addEventListener('click', () => {
     }
 });
 
-// Reset button clears input and all tasks
+
 reset.addEventListener('click', () => {
     input.value = '';
     ul.innerHTML = '';
 });
 
-// Delete individual task using event delegation
+
 ul.addEventListener('click', (e) => {
     if (e.target.tagName === 'SPAN') {
-        e.target.parentElement.remove(); // remove the <li>
+        e.target.parentElement.remove(); 
     }
 });
