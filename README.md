@@ -1,2 +1,5 @@
 # Todo-list
-it is todo list to using html,css and javascript
+todo list 
+
+#language
+javascript, html , css 
