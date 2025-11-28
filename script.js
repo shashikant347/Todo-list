@@ -3,7 +3,6 @@ let add = document.querySelector('.add');
 let ul = document.querySelector('.list');
 let reset = document.querySelector('.reset');
 
-
 add.addEventListener('click', () => {
     let values = input.value.trim();
     if (values === '') {
@@ -21,7 +20,6 @@ add.addEventListener('click', () => {
         input.value = '';
     }
 });
-
 
 reset.addEventListener('click', () => {
     input.value = '';
