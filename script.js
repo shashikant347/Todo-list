@@ -1,4 +1,6 @@
+// all selected elements
 let input = document.querySelector('#input');
+
 let add = document.querySelector('.add');
 let ul = document.querySelector('.list');
 let reset = document.querySelector('.reset');
